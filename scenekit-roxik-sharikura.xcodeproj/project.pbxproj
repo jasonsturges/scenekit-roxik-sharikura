@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1EF95B332580BA1A00426952 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF95B322580BA1A00426952 /* AppDelegate.swift */; };
+		1EF95B352580BA1A00426952 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EF95B342580BA1A00426952 /* art.scnassets */; };
+		1EF95B372580BA1A00426952 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF95B362580BA1A00426952 /* GameViewController.swift */; };
+		1EF95B3A2580BA1A00426952 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EF95B382580BA1A00426952 /* Main.storyboard */; };
+		1EF95B3C2580BA1C00426952 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EF95B3B2580BA1C00426952 /* Assets.xcassets */; };
+		1EF95B472580BA1C00426952 /* scenekit_roxik_sharikuraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF95B462580BA1C00426952 /* scenekit_roxik_sharikuraTests.swift */; };
+		1EF95B522580BA1C00426952 /* scenekit_roxik_sharikuraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF95B512580BA1C00426952 /* scenekit_roxik_sharikuraUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1EF95B432580BA1C00426952 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1EF95B272580BA1A00426952 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EF95B2E2580BA1A00426952;
+			remoteInfo = "scenekit-roxik-sharikura";
+		};
+		1EF95B4E2580BA1C00426952 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1EF95B272580BA1A00426952 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EF95B2E2580BA1A00426952;
+			remoteInfo = "scenekit-roxik-sharikura";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1EF95B2F2580BA1A00426952 /* scenekit-roxik-sharikura.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "scenekit-roxik-sharikura.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EF95B322580BA1A00426952 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1EF95B342580BA1A00426952 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		1EF95B362580BA1A00426952 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		1EF95B392580BA1A00426952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1EF95B3B2580BA1C00426952 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1EF95B3D2580BA1C00426952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EF95B422580BA1C00426952 /* scenekit-roxik-sharikuraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "scenekit-roxik-sharikuraTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EF95B462580BA1C00426952 /* scenekit_roxik_sharikuraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scenekit_roxik_sharikuraTests.swift; sourceTree = "<group>"; };
+		1EF95B482580BA1C00426952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EF95B4D2580BA1C00426952 /* scenekit-roxik-sharikuraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "scenekit-roxik-sharikuraUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EF95B512580BA1C00426952 /* scenekit_roxik_sharikuraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scenekit_roxik_sharikuraUITests.swift; sourceTree = "<group>"; };
+		1EF95B532580BA1C00426952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1EF95B2C2580BA1A00426952 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EF95B3F2580BA1C00426952 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EF95B4A2580BA1C00426952 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EF95B262580BA1A00426952 = {
+			isa = PBXGroup;
+			children = (
+				1EF95B312580BA1A00426952 /* scenekit-roxik-sharikura */,
+				1EF95B452580BA1C00426952 /* scenekit-roxik-sharikuraTests */,
+				1EF95B502580BA1C00426952 /* scenekit-roxik-sharikuraUITests */,
+				1EF95B302580BA1A00426952 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1EF95B302580BA1A00426952 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1EF95B2F2580BA1A00426952 /* scenekit-roxik-sharikura.app */,
+				1EF95B422580BA1C00426952 /* scenekit-roxik-sharikuraTests.xctest */,
+				1EF95B4D2580BA1C00426952 /* scenekit-roxik-sharikuraUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1EF95B312580BA1A00426952 /* scenekit-roxik-sharikura */ = {
+			isa = PBXGroup;
+			children = (
+				1EF95B322580BA1A00426952 /* AppDelegate.swift */,
+				1EF95B342580BA1A00426952 /* art.scnassets */,
+				1EF95B362580BA1A00426952 /* GameViewController.swift */,
+				1EF95B382580BA1A00426952 /* Main.storyboard */,
+				1EF95B3B2580BA1C00426952 /* Assets.xcassets */,
+				1EF95B3D2580BA1C00426952 /* Info.plist */,
+			);
+			path = "scenekit-roxik-sharikura";
+			sourceTree = "<group>";
+		};
+		1EF95B452580BA1C00426952 /* scenekit-roxik-sharikuraTests */ = {
+			isa = PBXGroup;
+			children = (
+				1EF95B462580BA1C00426952 /* scenekit_roxik_sharikuraTests.swift */,
+				1EF95B482580BA1C00426952 /* Info.plist */,
+			);
+			path = "scenekit-roxik-sharikuraTests";
+			sourceTree = "<group>";
+		};
+		1EF95B502580BA1C00426952 /* scenekit-roxik-sharikuraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1EF95B512580BA1C00426952 /* scenekit_roxik_sharikuraUITests.swift */,
+				1EF95B532580BA1C00426952 /* Info.plist */,
+			);
+			path = "scenekit-roxik-sharikuraUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1EF95B2E2580BA1A00426952 /* scenekit-roxik-sharikura */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EF95B562580BA1C00426952 /* Build configuration list for PBXNativeTarget "scenekit-roxik-sharikura" */;
+			buildPhases = (
+				1EF95B2B2580BA1A00426952 /* Sources */,
+				1EF95B2C2580BA1A00426952 /* Frameworks */,
+				1EF95B2D2580BA1A00426952 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "scenekit-roxik-sharikura";
+			productName = "scenekit-roxik-sharikura";
+			productReference = 1EF95B2F2580BA1A00426952 /* scenekit-roxik-sharikura.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1EF95B412580BA1C00426952 /* scenekit-roxik-sharikuraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EF95B592580BA1C00426952 /* Build configuration list for PBXNativeTarget "scenekit-roxik-sharikuraTests" */;
+			buildPhases = (
+				1EF95B3E2580BA1C00426952 /* Sources */,
+				1EF95B3F2580BA1C00426952 /* Frameworks */,
+				1EF95B402580BA1C00426952 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1EF95B442580BA1C00426952 /* PBXTargetDependency */,
+			);
+			name = "scenekit-roxik-sharikuraTests";
+			productName = "scenekit-roxik-sharikuraTests";
+			productReference = 1EF95B422580BA1C00426952 /* scenekit-roxik-sharikuraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1EF95B4C2580BA1C00426952 /* scenekit-roxik-sharikuraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EF95B5C2580BA1C00426952 /* Build configuration list for PBXNativeTarget "scenekit-roxik-sharikuraUITests" */;
+			buildPhases = (
+				1EF95B492580BA1C00426952 /* Sources */,
+				1EF95B4A2580BA1C00426952 /* Frameworks */,
+				1EF95B4B2580BA1C00426952 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1EF95B4F2580BA1C00426952 /* PBXTargetDependency */,
+			);
+			name = "scenekit-roxik-sharikuraUITests";
+			productName = "scenekit-roxik-sharikuraUITests";
+			productReference = 1EF95B4D2580BA1C00426952 /* scenekit-roxik-sharikuraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1EF95B272580BA1A00426952 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					1EF95B2E2580BA1A00426952 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					1EF95B412580BA1C00426952 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 1EF95B2E2580BA1A00426952;
+					};
+					1EF95B4C2580BA1C00426952 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 1EF95B2E2580BA1A00426952;
+					};
+				};
+			};
+			buildConfigurationList = 1EF95B2A2580BA1A00426952 /* Build configuration list for PBXProject "scenekit-roxik-sharikura" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1EF95B262580BA1A00426952;
+			productRefGroup = 1EF95B302580BA1A00426952 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1EF95B2E2580BA1A00426952 /* scenekit-roxik-sharikura */,
+				1EF95B412580BA1C00426952 /* scenekit-roxik-sharikuraTests */,
+				1EF95B4C2580BA1C00426952 /* scenekit-roxik-sharikuraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1EF95B2D2580BA1A00426952 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EF95B352580BA1A00426952 /* art.scnassets in Resources */,
+				1EF95B3C2580BA1C00426952 /* Assets.xcassets in Resources */,
+				1EF95B3A2580BA1A00426952 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EF95B402580BA1C00426952 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EF95B4B2580BA1C00426952 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1EF95B2B2580BA1A00426952 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EF95B372580BA1A00426952 /* GameViewController.swift in Sources */,
+				1EF95B332580BA1A00426952 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EF95B3E2580BA1C00426952 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EF95B472580BA1C00426952 /* scenekit_roxik_sharikuraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EF95B492580BA1C00426952 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EF95B522580BA1C00426952 /* scenekit_roxik_sharikuraUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1EF95B442580BA1C00426952 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EF95B2E2580BA1A00426952 /* scenekit-roxik-sharikura */;
+			targetProxy = 1EF95B432580BA1C00426952 /* PBXContainerItemProxy */;
+		};
+		1EF95B4F2580BA1C00426952 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EF95B2E2580BA1A00426952 /* scenekit-roxik-sharikura */;
+			targetProxy = 1EF95B4E2580BA1C00426952 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1EF95B382580BA1A00426952 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1EF95B392580BA1A00426952 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1EF95B542580BA1C00426952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1EF95B552580BA1C00426952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1EF95B572580BA1C00426952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "scenekit-roxik-sharikura/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jasonsturges.scenekit-roxik-sharikura";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1EF95B582580BA1C00426952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "scenekit-roxik-sharikura/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jasonsturges.scenekit-roxik-sharikura";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1EF95B5A2580BA1C00426952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "scenekit-roxik-sharikuraTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jasonsturges.scenekit-roxik-sharikuraTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/scenekit-roxik-sharikura.app/scenekit-roxik-sharikura";
+			};
+			name = Debug;
+		};
+		1EF95B5B2580BA1C00426952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "scenekit-roxik-sharikuraTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jasonsturges.scenekit-roxik-sharikuraTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/scenekit-roxik-sharikura.app/scenekit-roxik-sharikura";
+			};
+			name = Release;
+		};
+		1EF95B5D2580BA1C00426952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "scenekit-roxik-sharikuraUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jasonsturges.scenekit-roxik-sharikuraUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "scenekit-roxik-sharikura";
+			};
+			name = Debug;
+		};
+		1EF95B5E2580BA1C00426952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "scenekit-roxik-sharikuraUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jasonsturges.scenekit-roxik-sharikuraUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "scenekit-roxik-sharikura";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1EF95B2A2580BA1A00426952 /* Build configuration list for PBXProject "scenekit-roxik-sharikura" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EF95B542580BA1C00426952 /* Debug */,
+				1EF95B552580BA1C00426952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EF95B562580BA1C00426952 /* Build configuration list for PBXNativeTarget "scenekit-roxik-sharikura" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EF95B572580BA1C00426952 /* Debug */,
+				1EF95B582580BA1C00426952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EF95B592580BA1C00426952 /* Build configuration list for PBXNativeTarget "scenekit-roxik-sharikuraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EF95B5A2580BA1C00426952 /* Debug */,
+				1EF95B5B2580BA1C00426952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EF95B5C2580BA1C00426952 /* Build configuration list for PBXNativeTarget "scenekit-roxik-sharikuraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EF95B5D2580BA1C00426952 /* Debug */,
+				1EF95B5E2580BA1C00426952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1EF95B272580BA1A00426952 /* Project object */;
+}
