@@ -197,8 +197,8 @@ class MotionController {
 
         let a = Float.random(in: 0.022..<0.072)
         let v = Float.random(in: 0.02..<0.045)
-        let d = Float.random(in: 1.2..<2.2)
         let dx = -v * Float(models.count) * 0.44
+        let d = Float.random(in: 1.2..<2.2)
 
         for (i, model) in models.enumerated() {
             model.speed = 0.0
