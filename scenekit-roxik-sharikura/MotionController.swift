@@ -176,7 +176,7 @@ class MotionController {
             model.acceleration = 0.5
             model.animate = false
             model.direction.x = 0.0
-            model.direction.y = Float.random(in: -0.2...0)
+            model.direction.y = Float.random(in: -0.2...0.8)
             model.direction.z = 0.0
         }
     }
@@ -262,16 +262,14 @@ class MotionController {
 
         case .Gravity:
             for (_, model) in models.enumerated() {
-                var y = model.position.y + model.direction.y
+                model.position.y += model.direction.y
                 model.direction.y -= 0.06
 
-                if (y < -9.0) {
-                    y = -9.0
-                    model.direction.y += -model.acceleration
-                    model.acceleration += 0.9
+                if (model.position.y < -9.0) {
+                    model.position.y = -9.0
+                    model.direction.y *= -model.acceleration
+                    model.acceleration *= 0.9
                 }
-
-                model.position.y = y;
             }
 
         case .Antigravity:
