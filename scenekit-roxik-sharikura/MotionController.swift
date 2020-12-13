@@ -126,18 +126,18 @@ class MotionController {
     }
 
     func wave(models: [Sphere]) {
-        let a: Float = Float.random(in: 0.022...0.05)
+        let a: Float = Float.random(in: 0.022...0.072)
         let l: Int = Int(floor(sqrt(Double(models.count))))
-        let d: Float = -(Float(l - 1)) * 0.55 * 0.5
-        let t: Float = Float.random(in: 0.05...0.3)
-        let s: Float = Float.random(in: 0...2)
+        let d: Float = -(Float(l) - 1.0) * 0.55 * 0.5
+        let t: Float = Float.random(in: 0.05...0.35)
+        let s: Float = Float.random(in: 1...2)
         var n: Int = 0
         r = 0
         r0 = 0
-        rl = Float.random(in: 0...2)
-        rp = Float.random(in: 0.1...0.3)
+        rl = Float.random(in: 1...2)
+        rp = Float.random(in: 0.1...0.4)
 
-        for i in 0...l {
+        for i in 0..<l {
             let ty: Float = cos(r) * s
             r += t
 
@@ -147,7 +147,7 @@ class MotionController {
                 model.speed = 0
                 model.acceleration = a
                 model.animate = false
-                model.dest.x = Float(i) * 0.55 * d
+                model.dest.x = Float(i) * 0.55 + d
                 model.dest.y = ty
                 model.dest.z = Float(j) * 0.55 + d
                 model.direction.x = 0.0
@@ -195,9 +195,9 @@ class MotionController {
     func tube(models: [Sphere]) {
         motionType = MotionType.Tube
 
-        let a = Float.random(in: 0.022..<0.05)
+        let a = Float.random(in: 0.022..<0.072)
         let v = Float.random(in: 0.02..<0.045)
-        let d = Float.random(in: 0.0..<1.2)
+        let d = Float.random(in: 1.2..<2.2)
         let dx = -v * Float(models.count) * 0.44
 
         for (i, model) in models.enumerated() {
@@ -293,13 +293,14 @@ class MotionController {
             var cc: Int = 0
 
             for _ in 0..<max {
+                let c = cos(r) * rl
+                r += rp
+                
                 for _ in 0..<max {
                     let model = models[cc]
-                    model.dest.y = cos(r) * rl
+                    model.dest.y = c
                     cc += 1
                 }
-
-                r += rp
             }
 
             r0 += 0.11
@@ -311,9 +312,9 @@ class MotionController {
                     model.speed += model.acceleration
                 }
 
-                model.position.x = (model.dest.x - model.position.x) * model.speed
-                model.position.y = (model.dest.y - model.position.y) * model.speed
-                model.position.z = (model.dest.z - model.position.z) * model.speed
+                model.position.x += (model.dest.x - model.position.x) * model.speed
+                model.position.y += (model.dest.y - model.position.y) * model.speed
+                model.position.z += (model.dest.z - model.position.z) * model.speed
             }
 
             maxp = Int(Double(models.count) / 40.0)
