@@ -18,7 +18,7 @@ class MotionController {
     var sceneLimit: Int = 100
     var frameNumber: Int = 0
 
-    func changeScene(models: [Sphere], motionType: MotionType) {
+    func changeMotion(models: [Sphere], motionType: MotionType) {
         self.motionType = motionType
         sceneLimit = Int.random(in: 3...143)
         cutoff = 0
@@ -330,7 +330,7 @@ class MotionController {
 
         frameNumber += 1
         if (frameNumber > sceneLimit) {
-            changeScene(models: models, motionType: MotionType.allCases.randomElement()!)
+            changeMotion(models: models, motionType: MotionType.allCases.randomElement()!)
         }
     }
 }
