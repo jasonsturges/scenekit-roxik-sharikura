@@ -45,11 +45,11 @@ class MotionController {
     func cylinder(models: [Sphere]) {
         var n: Float = 0.0
         let r: Float = Float.pi * 2.0 / Float(models.count);
-        let d: Float = Float.random(in: 1.0..<40.0) * r
+        let d: Float = Float.random(in: 1.0..<41.0) * r
 
         for (i, model) in models.enumerated() {
             model.speed = 0.0
-            model.acceleration = Float.random(in: 0.022..<0.05)
+            model.acceleration = Float.random(in: 0.022..<0.072)
             model.animate = false
 
             if (i < models.count - 50) {
@@ -68,7 +68,7 @@ class MotionController {
     }
 
     func cube(models: [Sphere]) {
-        let a: Float = Float.random(in: 0.022...0.05)
+        let a: Float = Float.random(in: 0.022...0.072)
         let n: Int = 0
         var l: Int = 1
 
