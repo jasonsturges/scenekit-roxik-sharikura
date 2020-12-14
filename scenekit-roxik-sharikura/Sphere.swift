@@ -32,6 +32,6 @@ class Sphere {
         self.color = color
         
         geometry.materials.first?.diffuse.contents = color
-        geometry.materials.first?.specular.contents = UIColor.white
+        geometry.materials.first?.specular.contents = color
     }
 }
