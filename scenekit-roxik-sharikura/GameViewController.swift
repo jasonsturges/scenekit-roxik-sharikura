@@ -63,7 +63,6 @@ class GameViewController: UIViewController, SCNSceneRendererDelegate {
         
         gameScene.rootNode.addChildNode(cubeNode);
         
-        
         let bet: Float = 0.7;
         let offset: Float = (8 - 1) * bet * 0.5;
         let colors = [

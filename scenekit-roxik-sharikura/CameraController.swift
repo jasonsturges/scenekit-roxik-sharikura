@@ -9,11 +9,11 @@ import Foundation
 import SceneKit
 
 class CameraController {
-    var frameNumber: Int = 0
-    var targetModel: Sphere! = nil
     var cameraNode: SCNNode!
-    var target: SCNVector3! = SCNVector3(x: 0, y: 0, z: 0)
+    var frameNumber: Int = 0
     var sceneLimit: Int = 90
+    var target: SCNVector3! = SCNVector3(x: 0, y: 0, z: 0)
+    var targetModel: Sphere! = nil
     var bl: Float = 6.0
     var rp: Float = 0.03
     var cs: Float = 0.0

@@ -9,14 +9,14 @@ import Foundation
 import SceneKit
 
 class MotionController {
+    var cutoff: Int = 1
+    var frameNumber: Int = 0
+    var motionType: MotionType = MotionType.Cube
+    var sceneLimit: Int = 100
     var r: Float!
     var r0: Float!
     var rp: Float!
     var rl: Float!
-    var cutoff: Int = 1
-    var motionType: MotionType!
-    var sceneLimit: Int = 100
-    var frameNumber: Int = 0
 
     func changeMotion(models: [Sphere], motionType: MotionType) {
         self.motionType = motionType
