@@ -88,7 +88,7 @@ class GameViewController: UIViewController, SCNSceneRendererDelegate {
             }
         }
 
-        motionController.changeMotion(models: models, motionType: .Sphere)
+        motionController.changeMotion(models: models, motionType: .Cube)
     }
 
     func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
