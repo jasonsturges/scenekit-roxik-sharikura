@@ -321,9 +321,6 @@ class MotionController {
             if (cutoff > models.count) {
                 cutoff = models.count
             }
-
-        default:
-            print("none")
         }
 
         frameNumber += 1
