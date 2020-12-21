@@ -8,11 +8,11 @@
 import Foundation
 
 enum MotionType: CaseIterable {
-    case Cylinder
-    case Sphere
+    case Antigravity
     case Cube
+    case Cylinder
+    case Gravity
+    case Sphere
     case Tube
     case Wave
-    case Gravity
-    case Antigravity
 }
