@@ -19,7 +19,6 @@ class MotionController {
     var rl: Float!
 
     func changeMotion(models: [Sphere], motionType: MotionType) {
-        self.motionType = motionType
         sceneLimit = Int.random(in: 3...143)
         cutoff = 0
         frameNumber = 0
@@ -43,6 +42,8 @@ class MotionController {
     }
 
     func cylinder(models: [Sphere]) {
+        motionType = MotionType.Cylinder
+        
         var n: Float = 0.0
         let r: Float = Float.pi * 2.0 / Float(models.count)
         let d: Float = Float.random(in: 1.0..<41.0) * r
@@ -68,6 +69,8 @@ class MotionController {
     }
 
     func cube(models: [Sphere]) {
+        motionType = MotionType.Cube
+        
         let a: Float = Float.random(in: 0.022...0.072)
         let n: Int = 0
         var l: Int = 1
@@ -97,7 +100,9 @@ class MotionController {
     }
 
     func sphere(models: [Sphere]) {
-        var s: Float = 0.0;
+        motionType = MotionType.Sphere
+        
+        var s: Float = 0.0
         var c: Float = 0.0
         let r: Float = Float.pi * 2 / Float(models.count)
         let d: Float = Float.random(in: 1.0..<40.0) * r
@@ -126,6 +131,8 @@ class MotionController {
     }
 
     func wave(models: [Sphere]) {
+        motionType = MotionType.Wave
+        
         let a: Float = Float.random(in: 0.022...0.072)
         let l: Int = Int(floor(sqrt(Double(models.count))))
         let d: Float = -(Float(l) - 1.0) * 0.55 * 0.5
@@ -170,7 +177,9 @@ class MotionController {
     }
 
     func gravity(models: [Sphere]) {
+        motionType = MotionType.Gravity
         sceneLimit = 60
+        
         for (_, model) in models.enumerated() {
             model.speed = 0
             model.acceleration = 0.5
@@ -182,6 +191,8 @@ class MotionController {
     }
 
     func antigravity(models: [Sphere]) {
+        motionType = MotionType.Antigravity
+        
         for (_, model) in models.enumerated() {
             model.speed = 0
             model.acceleration = 0.5
