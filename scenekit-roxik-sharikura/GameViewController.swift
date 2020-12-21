@@ -61,10 +61,10 @@ class GameViewController: UIViewController, SCNSceneRendererDelegate {
         cube.materials.first?.isDoubleSided = true
         let cubeNode = SCNNode(geometry: cube)
         
-        gameScene.rootNode.addChildNode(cubeNode);
+        gameScene.rootNode.addChildNode(cubeNode)
         
-        let bet: Float = 0.7;
-        let offset: Float = (8 - 1) * bet * 0.5;
+        let bet: Float = 0.7
+        let offset: Float = (8 - 1) * bet * 0.5
         let colors = [
             UIColor(red: 0.592, green: 0.207, blue: 0.043, alpha: 1),
             UIColor(red: 0.149, green: 0.431, blue: 0.647, alpha: 1),

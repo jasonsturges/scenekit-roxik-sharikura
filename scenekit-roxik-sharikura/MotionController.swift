@@ -44,7 +44,7 @@ class MotionController {
 
     func cylinder(models: [Sphere]) {
         var n: Float = 0.0
-        let r: Float = Float.pi * 2.0 / Float(models.count);
+        let r: Float = Float.pi * 2.0 / Float(models.count)
         let d: Float = Float.random(in: 1.0..<41.0) * r
 
         for (i, model) in models.enumerated() {
@@ -54,16 +54,16 @@ class MotionController {
 
             if (i < models.count - 50) {
                 let a: Float = Float(models.count) - 50.0
-                model.dest.x = cos(n) * 4.0;
-                model.dest.y = Float(i) * 0.008 - a * 0.004;
-                model.dest.z = sin(n) * 4.0;
+                model.dest.x = cos(n) * 4.0
+                model.dest.y = Float(i) * 0.008 - a * 0.004
+                model.dest.z = sin(n) * 4.0
             } else {
                 model.dest.x = Float.random(in: -7.0..<7.0)
                 model.dest.y = Float.random(in: -7.0..<7.0)
                 model.dest.z = Float.random(in: -7.0..<7.0)
             }
 
-            n += d;
+            n += d
         }
     }
 
