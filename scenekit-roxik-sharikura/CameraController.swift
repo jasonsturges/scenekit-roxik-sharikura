@@ -9,6 +9,7 @@ import Foundation
 import SceneKit
 
 class CameraController {
+    
     var cameraNode: SCNNode!
     var frameNumber: Int = 0
     var sceneLimit: Int = 90
@@ -25,8 +26,12 @@ class CameraController {
     func setCamera(node: SCNNode) {
         cameraNode = node
     }
+    
+}
 
-    func update(models: [Sphere]) {
+extension CameraController: FrameHandlerDelegate {
+    
+    func didEnterFrame(models: [Sphere]) {
         if (frameNumber % sceneLimit == 0) {
             sceneLimit = Int.random(in: 45...90)
             targetModel = models.randomElement()!

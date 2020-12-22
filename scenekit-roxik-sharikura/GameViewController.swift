@@ -9,20 +9,27 @@ import UIKit
 import QuartzCore
 import SceneKit
 
+protocol FrameHandlerDelegate {
+    func didEnterFrame(models: [Sphere])
+}
 
 class GameViewController: UIViewController, SCNSceneRendererDelegate {
 
     var gameView: SCNView!
     var gameScene: SCNScene!
     var cameraNode: SCNNode!
-    var targetCreationTime: TimeInterval = 0
-    var models = [Sphere]()
-
     let cameraControler: CameraController = CameraController()
-    var motionController: MotionController = MotionController()
+    var cameraDelegate:FrameHandlerDelegate!
+    var models = [Sphere]()
+    let motionController: MotionController = MotionController()
+    var motionDelegate:FrameHandlerDelegate!
+    var targetCreationTime: TimeInterval = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        cameraDelegate = cameraControler
+        motionDelegate = motionController
 
         initView()
         initScene()
@@ -92,8 +99,8 @@ class GameViewController: UIViewController, SCNSceneRendererDelegate {
     }
 
     func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
-        cameraControler.update(models: models)
-        motionController.update(models: models)
+        cameraDelegate.didEnterFrame(models: models)
+        motionDelegate.didEnterFrame(models: models)
     }
 
     override var shouldAutorotate: Bool {
@@ -113,4 +120,3 @@ class GameViewController: UIViewController, SCNSceneRendererDelegate {
     }
 
 }
-

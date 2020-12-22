@@ -9,6 +9,7 @@ import Foundation
 import SceneKit
 
 class MotionController {
+    
     var cutoff: Int = 1
     var frameNumber: Int = 0
     var motionType: MotionType = MotionType.Cube
@@ -228,7 +229,11 @@ class MotionController {
         }
     }
 
-    func update(models: [Sphere]) {
+}
+
+extension MotionController: FrameHandlerDelegate {
+
+    func didEnterFrame(models: [Sphere]) {
         var maxp: Int
 
         switch motionType {
@@ -339,4 +344,5 @@ class MotionController {
             changeMotion(models: models, motionType: MotionType.allCases.randomElement()!)
         }
     }
+    
 }
