@@ -55,6 +55,11 @@ class GameViewController: UIViewController, SCNSceneRendererDelegate {
     func initCamera() {
         cameraNode = SCNNode()
         cameraNode.camera = SCNCamera()
+        cameraNode.camera?.wantsDepthOfField = true
+        cameraNode.camera?.focusDistance = 6
+        cameraNode.camera?.fStop = 0.07
+        cameraNode.camera?.focalLength = 22
+        cameraNode.camera?.apertureBladeCount = 10
         cameraNode.position = SCNVector3(x: 0, y: 5, z: 10)
         gameView.pointOfView = cameraNode
         
