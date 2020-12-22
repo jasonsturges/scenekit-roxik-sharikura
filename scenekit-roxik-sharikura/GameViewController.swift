@@ -48,7 +48,7 @@ class GameViewController: UIViewController, SCNSceneRendererDelegate {
     func initScene() {
         gameScene = SCNScene()
         gameView.scene = gameScene
-
+        gameView.showsStatistics = true;
         gameView.isPlaying = true
     }
 
