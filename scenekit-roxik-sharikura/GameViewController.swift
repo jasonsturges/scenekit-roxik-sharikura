@@ -87,9 +87,10 @@ class GameViewController: UIViewController, SCNSceneRendererDelegate {
             UIColor(red: 0.478, green: 0.270, blue: 0.149, alpha: 1)
         ]
 
-        for i in 1...8 {
-            for j in 1...8 {
-                for k in 1...8 {
+        let length = 8
+        for i in 0..<length {
+            for j in 0..<length {
+                for k in 0..<length {
                     let color = colors.randomElement()!
                     let sphere = Sphere(fromColor: color)
                     sphere.position = SCNVector3(x: Float(i) * bet - offset, y: Float(Float(j) * bet - offset), z: Float(Float(k) * bet - offset))
