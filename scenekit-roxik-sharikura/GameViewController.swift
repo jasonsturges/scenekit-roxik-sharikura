@@ -75,8 +75,9 @@ class GameViewController: UIViewController, SCNSceneRendererDelegate {
         
         gameScene.rootNode.addChildNode(cubeNode)
         
-        let bet: Float = 0.7
-        let offset: Float = (8 - 1) * bet * 0.5
+        let length: Int = 8
+        let bet: Float = 0.8
+        let offset: Float = Float(length - 1) * bet * 0.5
         let colors = [
             UIColor(red: 0.592, green: 0.207, blue: 0.043, alpha: 1),
             UIColor(red: 0.149, green: 0.431, blue: 0.647, alpha: 1),
@@ -87,7 +88,6 @@ class GameViewController: UIViewController, SCNSceneRendererDelegate {
             UIColor(red: 0.478, green: 0.270, blue: 0.149, alpha: 1)
         ]
 
-        let length = 8
         for i in 0..<length {
             for j in 0..<length {
                 for k in 0..<length {
