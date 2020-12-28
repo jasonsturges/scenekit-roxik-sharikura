@@ -42,30 +42,16 @@ class MotionController {
         }
     }
 
-    func cylinder(models: [Sphere]) {
-        motionType = MotionType.Cylinder
+    func antigravity(models: [Sphere]) {
+        motionType = MotionType.Antigravity
         
-        var n: Float = 0.0
-        let r: Float = Float.pi * 2.0 / Float(models.count)
-        let d: Float = Float.random(in: 1.0..<41.0) * r
-
-        for (i, model) in models.enumerated() {
-            model.speed = 0.0
-            model.acceleration = Float.random(in: 0.022..<0.072)
+        for (_, model) in models.enumerated() {
+            model.speed = 0
+            model.acceleration = 0.5
             model.animate = false
-
-            if (i < models.count - 50) {
-                let a: Float = Float(models.count) - 50.0
-                model.dest.x = cos(n) * 4.0
-                model.dest.y = Float(i) * 0.008 - a * 0.004
-                model.dest.z = sin(n) * 4.0
-            } else {
-                model.dest.x = Float.random(in: -7.0..<7.0)
-                model.dest.y = Float.random(in: -7.0..<7.0)
-                model.dest.z = Float.random(in: -7.0..<7.0)
-            }
-
-            n += d
+            model.direction.x = Float.random(in: -0.125...0.125)
+            model.direction.y = Float.random(in: -0.125...0.125)
+            model.direction.z = Float.random(in: -0.125...0.125)
         }
     }
 
@@ -101,6 +87,47 @@ class MotionController {
         }
     }
 
+    func cylinder(models: [Sphere]) {
+        motionType = MotionType.Cylinder
+        
+        var n: Float = 0.0
+        let r: Float = Float.pi * 2.0 / Float(models.count)
+        let d: Float = Float.random(in: 1.0..<41.0) * r
+
+        for (i, model) in models.enumerated() {
+            model.speed = 0.0
+            model.acceleration = Float.random(in: 0.022..<0.072)
+            model.animate = false
+
+            if (i < models.count - 50) {
+                let a: Float = Float(models.count) - 50.0
+                model.dest.x = cos(n) * 4.0
+                model.dest.y = Float(i) * 0.008 - a * 0.004
+                model.dest.z = sin(n) * 4.0
+            } else {
+                model.dest.x = Float.random(in: -7.0..<7.0)
+                model.dest.y = Float.random(in: -7.0..<7.0)
+                model.dest.z = Float.random(in: -7.0..<7.0)
+            }
+
+            n += d
+        }
+    }
+
+    func gravity(models: [Sphere]) {
+        motionType = MotionType.Gravity
+        sceneLimit = 60
+        
+        for (_, model) in models.enumerated() {
+            model.speed = 0
+            model.acceleration = 0.5
+            model.animate = false
+            model.direction.x = 0.0
+            model.direction.y = Float.random(in: -0.2...0.8)
+            model.direction.z = 0.0
+        }
+    }
+
     func sphere(models: [Sphere]) {
         motionType = MotionType.Sphere
         
@@ -129,6 +156,31 @@ class MotionController {
 
             s += r
             c += d
+        }
+    }
+
+    func tube(models: [Sphere]) {
+        motionType = MotionType.Tube
+
+        let a = Float.random(in: 0.022..<0.072)
+        let v = Float.random(in: 0.02..<0.045)
+        let dx = -v * Float(models.count) * 0.44
+        let d = Float.random(in: 1.2..<2.2)
+
+        for (i, model) in models.enumerated() {
+            model.speed = 0.0
+            model.acceleration = a
+            model.animate = false
+
+            if (Float.random(in: 0.0..<1.0) > 0.05) {
+                model.dest.x = Float(i) * v + dx
+                model.dest.y = Float.random(in: 0.0..<1.0) * d - d * 0.5
+                model.dest.z = Float.random(in: 0.0..<1.0) * d - d * 0.5
+            } else {
+                model.dest.x = Float.random(in: -7.0..<7.0)
+                model.dest.y = Float.random(in: -7.0..<7.0)
+                model.dest.z = Float.random(in: -7.0..<7.0)
+            }
         }
     }
 
@@ -178,58 +230,6 @@ class MotionController {
         }
     }
 
-    func gravity(models: [Sphere]) {
-        motionType = MotionType.Gravity
-        sceneLimit = 60
-        
-        for (_, model) in models.enumerated() {
-            model.speed = 0
-            model.acceleration = 0.5
-            model.animate = false
-            model.direction.x = 0.0
-            model.direction.y = Float.random(in: -0.2...0.8)
-            model.direction.z = 0.0
-        }
-    }
-
-    func antigravity(models: [Sphere]) {
-        motionType = MotionType.Antigravity
-        
-        for (_, model) in models.enumerated() {
-            model.speed = 0
-            model.acceleration = 0.5
-            model.animate = false
-            model.direction.x = Float.random(in: -0.125...0.125)
-            model.direction.y = Float.random(in: -0.125...0.125)
-            model.direction.z = Float.random(in: -0.125...0.125)
-        }
-    }
-
-    func tube(models: [Sphere]) {
-        motionType = MotionType.Tube
-
-        let a = Float.random(in: 0.022..<0.072)
-        let v = Float.random(in: 0.02..<0.045)
-        let dx = -v * Float(models.count) * 0.44
-        let d = Float.random(in: 1.2..<2.2)
-
-        for (i, model) in models.enumerated() {
-            model.speed = 0.0
-            model.acceleration = a
-            model.animate = false
-
-            if (Float.random(in: 0.0..<1.0) > 0.05) {
-                model.dest.x = Float(i) * v + dx
-                model.dest.y = Float.random(in: 0.0..<1.0) * d - d * 0.5
-                model.dest.z = Float.random(in: 0.0..<1.0) * d - d * 0.5
-            } else {
-                model.dest.x = Float.random(in: -7.0..<7.0)
-                model.dest.y = Float.random(in: -7.0..<7.0)
-                model.dest.z = Float.random(in: -7.0..<7.0)
-            }
-        }
-    }
-
 }
 
 extension MotionController: FrameHandlerDelegate {
@@ -238,11 +238,11 @@ extension MotionController: FrameHandlerDelegate {
         var maxp: Int
 
         switch motionType {
+        case .Cube:
+            fallthrough
         case .Cylinder:
             fallthrough
         case .Sphere:
-            fallthrough
-        case .Cube:
             fallthrough
         case .Tube:
             for i in 0..<cutoff {
@@ -277,18 +277,6 @@ extension MotionController: FrameHandlerDelegate {
                 cutoff = models.count
             }
 
-        case .Gravity:
-            for (_, model) in models.enumerated() {
-                model.position.y += model.direction.y
-                model.direction.y -= 0.06
-
-                if (model.position.y < -9.0) {
-                    model.position.y = -9.0
-                    model.direction.y *= -model.acceleration
-                    model.acceleration *= 0.9
-                }
-            }
-
         case .Antigravity:
             for i in 0..<cutoff {
                 let model = models[i]
@@ -301,6 +289,18 @@ extension MotionController: FrameHandlerDelegate {
             cutoff += 30
             if (cutoff > models.count) {
                 cutoff = models.count
+            }
+
+        case .Gravity:
+            for (_, model) in models.enumerated() {
+                model.position.y += model.direction.y
+                model.direction.y -= 0.06
+
+                if (model.position.y < -9.0) {
+                    model.position.y = -9.0
+                    model.direction.y *= -model.acceleration
+                    model.acceleration *= 0.9
+                }
             }
 
         case .Wave:
