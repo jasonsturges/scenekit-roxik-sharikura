@@ -59,17 +59,8 @@ class MotionController {
         motionType = MotionType.Cube
         
         let a: Float = Float.random(in: 0.022...0.072)
+        let l: Int = Int(cbrt(Float(models.count)))
         var n: Int = 0
-        var l: Int = 1
-
-        while (true) {
-            if (l * l * l > models.count) {
-                l -= 1
-                break
-            }
-
-            l += 1
-        }
 
         for i in 0..<l {
             for j in 0..<l {
