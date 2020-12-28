@@ -25,20 +25,20 @@ class MotionController {
         frameNumber = 0
 
         switch motionType {
-        case .Cylinder:
-            cylinder(models: models)
-        case .Tube:
-            tube(models: models)
-        case .Sphere:
-            sphere(models: models)
-        case .Cube:
-            cube(models: models)
-        case .Wave:
-            wave(models: models)
-        case .Gravity:
-            gravity(models: models)
         case .Antigravity:
             antigravity(models: models)
+        case .Cube:
+            cube(models: models)
+        case .Cylinder:
+            cylinder(models: models)
+        case .Gravity:
+            gravity(models: models)
+        case .Sphere:
+            sphere(models: models)
+        case .Tube:
+            tube(models: models)
+        case .Wave:
+            wave(models: models)
         }
     }
 
