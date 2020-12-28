@@ -73,7 +73,7 @@ class MotionController {
         motionType = MotionType.Cube
         
         let a: Float = Float.random(in: 0.022...0.072)
-        let n: Int = 0
+        var n: Int = 0
         var l: Int = 1
 
         while (true) {
@@ -85,9 +85,9 @@ class MotionController {
             l += 1
         }
 
-        for i in 1...8 {
-            for j in 1...8 {
-                for k in 1...8 {
+        for i in 0..<l {
+            for j in 0..<l {
+                for k in 0..<l {
                     let model = models[n]
                     model.speed = 0
                     model.acceleration = a
@@ -95,6 +95,7 @@ class MotionController {
                     model.dest.x = Float(i) * 0.8 + -(Float(l - 1)) * 0.8 * 0.5
                     model.dest.y = Float(j) * 0.8 + -(Float(l - 1)) * 0.8 * 0.5
                     model.dest.z = Float(k) * 0.8 + -(Float(l - 1)) * 0.8 * 0.5
+                    n += 1
                 }
             }
         }

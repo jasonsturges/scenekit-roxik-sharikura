@@ -93,7 +93,7 @@ class GameViewController: UIViewController, SCNSceneRendererDelegate {
                 for k in 0..<length {
                     let color = colors.randomElement()!
                     let sphere = Sphere(fromColor: color)
-                    sphere.position = SCNVector3(x: Float(i) * bet - offset, y: Float(Float(j) * bet - offset), z: Float(Float(k) * bet - offset))
+                    sphere.position = SCNVector3(x: Float(i) * bet - offset, y: Float(j) * bet - offset, z: Float(k) * bet - offset)
 
                     gameScene.rootNode.addChildNode(sphere.geometryNode)
                     models.append(sphere)
